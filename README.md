@@ -1,4 +1,4 @@
-# Spring Pet Clinic DemoApp
+# Name
 
 Overview
 
