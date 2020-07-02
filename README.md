@@ -44,6 +44,15 @@ Builder: **gcr.io/buildpacks/builder**
 $ pack build --builder gcr.io/buildpacks/builder --publish docker.io/shinyay/spring-petclinic:1.0.0
 ```
 
+#### Run Containr Application
+```
+$ docker run --rm -p 8080:8080 shinyay/spring-petclinic:1.0.0
+```
+
+#### Run on Cloud Run
+
+[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)
+
 ## Features
 
 - feature:1
