@@ -44,6 +44,12 @@ Builder: **gcr.io/buildpacks/builder**
 $ pack build --builder gcr.io/buildpacks/builder --publish docker.io/shinyay/spring-petclinic:1.0.0
 ```
 
+#### Build with Google Cloud Build
+
+```
+$ gcloud alpha builds submit --pack image=gcr.io/<YOUR_PROJECT_ID>/<APP_NAME>
+```
+
 #### Run Containr Application
 ```
 $ docker run --rm -p 8080:8080 shinyay/spring-petclinic:1.0.0
