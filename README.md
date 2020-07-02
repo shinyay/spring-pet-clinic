@@ -21,6 +21,25 @@ $ rm pack-v0.11.2-linux.tgz
 $ sudo mv pack /usr/local/bin/
 ```
 
+#### Builder
+
+- **Paketo Buildpacks**
+- **Google Cloud Buildpacks**
+
+`$ pack build --builder <BUILDER_NAME> <APP_NAME>`
+
+#### Google Cloud Buildpacks
+
+Builder: **gcr.io/buildpacks/builder**
+
+- `$ pack build --builder gcr.io/buildpacks/builder:v1 <APP_NAME>`
+  - Google Container Registry: `--publish gcr.io/<YOUR_PROJECT_ID>/<APP_NAME>`
+  - Docker Hub: `--publish docker.io/<YOUR_PROJECT_ID>/<APP_NAME>`
+
+```
+$ $ pack build --builder gcr.io/buildpacks/builder --publish docker.io/shinyay/spring-petclinic:1.0.0
+```
+
 ## Features
 
 - feature:1
