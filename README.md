@@ -57,7 +57,7 @@ $ docker run --rm -p 8080:8080 shinyay/spring-petclinic:1.0.0
 
 #### Run on Cloud Run
 
-[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run?dir=src)
+[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)
 
 ## Features
 
