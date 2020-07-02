@@ -28,6 +28,10 @@ $ sudo mv pack /usr/local/bin/
 
 `$ pack build --builder <BUILDER_NAME> <APP_NAME>`
 
+#### Paketo Buildpack
+
+Builder: **gcr.io/paketo-buildpacks/builder:base**
+
 #### Google Cloud Buildpacks
 
 Builder: **gcr.io/buildpacks/builder**
@@ -37,7 +41,7 @@ Builder: **gcr.io/buildpacks/builder**
   - Docker Hub: `--publish docker.io/<YOUR_PROJECT_ID>/<APP_NAME>`
 
 ```
-$ $ pack build --builder gcr.io/buildpacks/builder --publish docker.io/shinyay/spring-petclinic:1.0.0
+$ pack build --builder gcr.io/buildpacks/builder --publish docker.io/shinyay/spring-petclinic:1.0.0
 ```
 
 ## Features
